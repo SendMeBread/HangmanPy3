@@ -21,7 +21,6 @@ def play():
 
 	print("Welcome to Hangman!")
 	while True:
-		# Keep spaces between words visible; hide every unguessed letter.
 		display = " ".join(
 			character if character == " " or character in guessed_letters else "_"
 			for character in word
